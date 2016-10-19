@@ -459,7 +459,7 @@ void CSend::OnBnClickedButtonSend()
 	
 
 	CString strDisplay;
-	strDisplay.Format(_T("%s%.4lfPLP%s%s"),_T("转账"), dSendMoney, _T("至") ,strMaddress);
+	strDisplay.Format(_T("%s%.4lfSAK%s%s"),_T("转账"), dSendMoney, _T("至") ,strMaddress);
 
 	if (IDCANCEL == UiFun::MessageBoxEx(strDisplay , _T("提示") , MFB_OKCANCEL|MFB_TIP ) )
 	{

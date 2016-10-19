@@ -482,11 +482,11 @@ void CSet::OnBnClickedButtonDcsy()
 		return ;
 	}
 	// TODO: 在此添加控件通知处理程序代码
-	CFileDialog dlg(FALSE,NULL,NULL,OFN_HIDEREADONLY|OFN_FILEMUSTEXIST ,_T("*.PLP||"));
+	CFileDialog dlg(FALSE,NULL,NULL,OFN_HIDEREADONLY|OFN_FILEMUSTEXIST ,_T("*.SAK||"));
 	if (IDOK == dlg.DoModal())
 	{
 		CString strPath = dlg.GetPathName();
-		if (!GetFileName(strPath,_T(".PLP")))
+		if (!GetFileName(strPath,_T(".SAK")))
 		{
 			return;
 		}
@@ -602,7 +602,7 @@ void CSet::OnBnClickedButtonDrsy()
 	ofn.lpstrFile[0] = TEXT('\0'); 
 	ofn.nMaxFile = sizeof(szFile); 
 
-	ofn.lpstrFilter =  "All Files(*.PLP)\0*.PLP\0All Files(*.*)\0*.*\0\0"; 
+	ofn.lpstrFilter =  "All Files(*.SAK)\0*.SAK\0All Files(*.*)\0*.*\0\0"; 
 	ofn.nFilterIndex = 1; 
 	ofn.lpstrFileTitle = NULL; 
 	ofn.nMaxFileTitle = 0; 
